@@ -3,6 +3,7 @@ import { startPageGuard } from '@core';
 import { authSimpleCanActivate, authSimpleCanActivateChild } from '@delon/auth';
 
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { HomeComponent } from './home/home.component';
 import { LayoutBasicComponent } from '../layout';
 
 export const routes: Routes = [
@@ -14,7 +15,8 @@ export const routes: Routes = [
     data: {},
     children: [
       { path: '', redirectTo: 'dashboard', pathMatch: 'full' },
-      { path: 'dashboard', component: DashboardComponent }
+      { path: 'dashboard', component: DashboardComponent },
+      { path: 'home', component: HomeComponent }
     ]
   },
   // passport

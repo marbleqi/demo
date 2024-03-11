@@ -1,5 +1,6 @@
 import { Component, inject } from '@angular/core';
 import { RouterLink, RouterOutlet } from '@angular/router';
+import { ReuseTabModule } from '@delon/abc/reuse-tab';
 import { I18nPipe, SettingsService, User } from '@delon/theme';
 import { LayoutDefaultModule, LayoutDefaultOptions } from '@delon/theme/layout-default';
 import { SettingDrawerModule } from '@delon/theme/setting-drawer';
@@ -91,6 +92,7 @@ import { HeaderUserComponent } from './widgets/user.component';
     NzMenuModule,
     NzDropDownModule,
     NzAvatarModule,
+    ReuseTabModule,
     HeaderSearchComponent,
     HeaderClearStorageComponent,
     HeaderFullScreenComponent,
