@@ -72,7 +72,8 @@ import { HeaderUserComponent } from './widgets/user.component';
         </nz-dropdown-menu>
       </ng-template>
       <ng-template #contentTpl>
-        <router-outlet />
+        <reuse-tab #reuseTab />
+        <router-outlet (activate)="reuseTab.activate($event)" (attach)="reuseTab.activate($event)" />
       </ng-template>
     </layout-default>
     @if (showSettingDrawer) {
